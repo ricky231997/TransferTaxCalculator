@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+}
+
+.calculator {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+/* Logo Integration Styles - Set to exactly 3cm × 3cm */
+.logo-container {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.office-logo {
+    width: 3cm;
+    height: 3cm;
+    object-fit: cover; /* Ensures the image fits the dimensions neatly without distortion */
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 26px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    font-size: 18px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.formula {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f0f7ff;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #004085;
+}
+
+.clear {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #777;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.clear:hover {
+    background: #555;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #e8f5e9;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+}
+
+.result-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #155724;
+}
+
+.result-value {
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0a461b;
+}

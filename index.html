@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Tax Calculator - Kitaotao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <div class="logo-container">
+        <img src="logo.jpg" alt="Municipal Assessor's Office Kitaotao, Bukidnon Logo" class="office-logo">
+    </div>
+
+    <h1>Transfer Tax Calculator</h1>
+
+    <label for="marketValue">Market Value</label>
+
+    <input
+        type="number"
+        id="marketValue"
+        placeholder="Enter Market Value"
+        step="0.01"
+    >
+
+    <div class="formula" id="formula">
+        Market Value × 1% × 55% <br>
+        <span style="font-size: 14px; font-weight: normal; color: #555;">(Rounded to nearest ₱10)</span>
+    </div>
+
+    <button class="clear" onclick="clearCalculator()">CLEAR</button>
+
+    <div class="result">
+        <div class="result-title">Transfer Tax Payable Amount</div>
+        <div class="result-value" id="result">₱0.00</div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
